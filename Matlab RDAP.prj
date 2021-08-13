@@ -1,0 +1,115 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2282727079" file="C:\Users\User\Documents\MATLAB\Matlab RDAP.prj" location="C:\Users\User\Documents\MATLAB" name="Matlab RDAP" target="target.mlapps" target-name="Package App">
+    <param.appname>Matlab RDAP</param.appname>
+    <param.authnamewatermark>ISIF Asia</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description>Matlab client to query RDAP Data</param.description>
+    <param.screenshot>D:\MSCS17-UM\RM\Proposal\ISIF-2019\RDAP-Work\MatlabClientLogo.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>b40e6d5b-bc4f-47bb-8da3-3edf7da20b7e</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\RDAPClient.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${MATLAB_ROOT}\toolbox\local\userpath.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\asn.json</file>
+      <file>${PROJECT_ROOT}\dns.json</file>
+      <file>${PROJECT_ROOT}\f1.txt</file>
+      <file>${PROJECT_ROOT}\FetchRawDataWebReadAPI.m</file>
+      <file>${PROJECT_ROOT}\fieldCount.m</file>
+      <file>${PROJECT_ROOT}\GetFullIPv6.m</file>
+      <file>${PROJECT_ROOT}\GetIPv6ArrPreix.m</file>
+      <file>${PROJECT_ROOT}\GetRangeIPv4.m</file>
+      <file>${PROJECT_ROOT}\GetRangeIPv6.m</file>
+      <file>${PROJECT_ROOT}\importcert.m</file>
+      <file>${PROJECT_ROOT}\ipv4.json</file>
+      <file>${PROJECT_ROOT}\ipv6.json</file>
+      <file>${PROJECT_ROOT}\matlab.mat</file>
+      <file>${PROJECT_ROOT}\ny.txt</file>
+      <file>${PROJECT_ROOT}\ny2.txt</file>
+      <file>${PROJECT_ROOT}\object-tags.json</file>
+      <file>${PROJECT_ROOT}\ParseASNEntityReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseDNSReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseEntitiesReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseEntityObjectReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseErrorReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseEventsReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseIPNetworkReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseLinksReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseNameserverReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseNoticesReponse.m</file>
+      <file>${PROJECT_ROOT}\ParsePublicIDsReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseRemarksReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseSecureDNSReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseVariantsReponse.m</file>
+      <file>${PROJECT_ROOT}\ParseVcardArrayReponse.m</file>
+      <file>${PROJECT_ROOT}\pathdef.m</file>
+      <file>${PROJECT_ROOT}\Punycode.m</file>
+      <file>${PROJECT_ROOT}\RDAPClient.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestASN.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestDNS.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestEntity.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestIP.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestIPv6.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestNameserver.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestPunnycode.m</file>
+      <file>${PROJECT_ROOT}\RDAPClientTestSearchDomain.m</file>
+      <file>${PROJECT_ROOT}\RefreshIANABootstrap.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\User\Documents" name="MATLAB" optional="false">C:\Users\User\Documents\MATLAB</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

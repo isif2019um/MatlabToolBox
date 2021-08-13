@@ -1,0 +1,22 @@
+function [FillIpv6Array Ipv6mask]=GetIPv6ArrPreix(dnsValue)
+dnsValue;
+if(contains(dnsValue,'::'))
+        FillIpv6Array=GetFullIPv6(dnsValue);
+        %dnsValue=split(dnsValue,'::');
+        if(contains(dnsValue,'/'))
+            dnsValue=split(dnsValue,'/');
+            Ipv6mask=split(dnsValue(2),'/');
+        else
+            Ipv6mask="0";
+        end
+    else
+        if(contains(dnsValue,'/'))
+            dnsValue=split(dnsValue,'/');
+            Ipv6mask=(dnsValue(2));
+            FillIpv6Array=split(dnsValue(1),':');
+        else
+            FillIpv6Array=split(dnsValue,':');
+            Ipv6mask="0";
+        end
+    end
+end
